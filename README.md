@@ -63,7 +63,7 @@ Cache *hits and misses* are tracked to analyze memory access patterns.
 
 ### Demo Video
 here's a short video highlighting the important features the project has to offer
-**Demo Video Link:** *(add link here)*
+**Demo Video Link:** **
 
 ### Report 
-here's the **Report of the project** *(add link here)*
+here's the **Report of the project** *(https://docs.google.com/document/d/1jx1nyKdYpWLMj8bMCbsIRGMCzh7Vja3ALaWrI2RImo4/edit?usp=sharing)*
