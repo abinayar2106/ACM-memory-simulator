@@ -1,5 +1,7 @@
 # src/main.py
 from allocator import init_memory, allocate, set_allocator, free_block, dump_memory
+from allocator import cache_system
+
 def main():
     init_memory(1024)
     
@@ -32,6 +34,13 @@ def cli():
             free_block(int(cmd[1]))
         elif action == "dump":
             dump_memory()
+        elif action == "cache":
+            if len(cmd)==1 or cmd[1]=="dump":
+                cache_system.dump()
+            elif cmd[1]=="stats":
+                cache_system.print_stats()
+            else:
+                print("Usage: cache [dump | stats]")
         elif action == "stats":
             dump_memory()  # stats are included in dump
         elif action == "exit":
