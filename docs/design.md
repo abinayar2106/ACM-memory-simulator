@@ -1,10 +1,12 @@
 ### MEMORY MANAGEMENT SIMULATOR - DESIGN DOC.
 
 1. Overview
+
 This project implements a user-space memory management simulator that models how an OS allocates and deallocates memory at runtime.The simulator supports multiple dynamic memory allocation strategies and includes a multilevel CPU cache simulation to track memory access behavior.
 The goal of the project to simulate core OS memory-management concepts using well-defined data structures and algorithms(even if a real OS kernel is not the main focus)
 
 2. Memory Model and Assumptions
+   
 Physical memory is simulated as a single continuous block of configurable size.(1024, in this case)
 Memory is represented as a list of blocks, where each block has a:
  -Starting address
@@ -104,4 +106,5 @@ Despite these limitations, the simulator effectively demonstrates core memory ma
 This project demonstrates dynamic memory allocation, fragmentation behavior, and cache simulation using user-space abstractions. By implementing multiple allocation strategies and a multilevel cache hierarchy, the simulator provides insight into operating system memory management decisions.
 
 The design prioritizes clarity and modularity, making the system easy to extend with additional features such as paging or alternative cache policies.
+
 
