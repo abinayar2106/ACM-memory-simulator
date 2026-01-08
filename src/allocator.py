@@ -1,6 +1,7 @@
 #allocator.py
 from cache import MultiLevelCache
-cache_system = MultiLevelCache([("L1", 4),("L2",8)])
+#from cache import access_memory
+cache_system = MultiLevelCache([("L1", 4),("L2",8)], block_size=16, associativity=1)
 current_allocator = "first_fit"
 def set_allocator(allocator_type):
     global current_allocator
@@ -73,6 +74,7 @@ def allocate(request_size):
     block.free = False
     block.id = block_id
     cache_system.access(block.start)
+    #cache_system.dump
     print(f"Allocated block id={block_id} at address={block.start}")
     return block_id
 
