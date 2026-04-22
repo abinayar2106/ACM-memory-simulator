@@ -48,7 +48,7 @@ Each cache level has configurable:
 - Block size  
 - Associativity  
 
-A FIFO replacement policyis used when cache sets are full.
+A FIFO replacement policy is used when cache sets are full.
 
 Cache *hits and misses* are tracked to analyze memory access patterns.
 
